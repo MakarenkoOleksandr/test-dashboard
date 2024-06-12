@@ -1,0 +1,39 @@
+@use "../mixins/mixins" as *;
+
+.main {
+  position: relative;
+  height: max-content;
+  grid-area: main;
+  background-color: white;
+  border-radius: 20px;
+  animation: PageIn 0.7s ease-in-out;
+  @include lg-min {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @include lg {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include md-min {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 165px;
+      width: 100%;
+      height: 1px;
+      background-color: #eeeeee;
+    }
+  }
+  &__content {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mainContentShow 0.7s ease-in-out;
+  }
+}
+
+.sm {
+  display: block;
+}

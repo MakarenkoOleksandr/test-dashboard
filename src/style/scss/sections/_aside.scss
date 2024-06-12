@@ -1,0 +1,44 @@
+@use "../mixins/mixins" as *;
+
+.aside {
+  background-color: #FFFFFF;
+  padding: 30px;
+  grid-area: aside;
+  animation: asideIn .9s ease-in-out;
+  &__navigation {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include md-xs {
+      justify-content: center;
+    }
+  }
+
+  &__user {
+    display: grid;
+    grid-template-areas:
+      "photo name"
+      "photo pos";
+    grid-template-columns: max-content 1fr;
+    column-gap: 15px;
+    @include md {
+      display: none;
+    }
+    &-photo {
+      grid-area: photo;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 14px;
+      grid-area: name;
+    }
+
+    &-position {
+      font-size: 12px;
+      color: #757575;
+      grid-area: pos;
+    }
+  }
+}

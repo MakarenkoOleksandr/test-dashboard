@@ -1,0 +1,54 @@
+@use "../mixins/mixins" as *;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #F7FAFE;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+
+  @include lg-min {
+    grid-template-columns: 310px 1fr;
+    grid-template-rows: max-content 1fr;
+  }
+
+  @include lg-md {
+    grid-template-columns: 1fr 3fr;
+  }
+  @include md {
+    grid-template-columns: 0.3fr 3fr;
+  }
+}
+
+.container {
+  @include lg-min {
+    min-width: 100%;
+  }
+
+  margin: 0 auto;
+}

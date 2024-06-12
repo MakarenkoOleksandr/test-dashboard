@@ -1,0 +1,296 @@
+@use "../mixins/mixins" as *;
+
+.customers {
+  padding: 30px 40px;
+
+  @include sm {
+    padding: 15px;
+  }
+
+  &__head {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    grid-template-areas:
+      "title search"
+      "active search";
+    @include xs {
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      grid-template-areas: 
+      "title"
+      "active"
+      "search";
+    }
+
+    &-title {
+      @include md-min {
+        font-size: 22px;
+      }
+
+      @include md {
+        font-size: 16px;
+      }
+
+      padding-bottom: 7px;
+      grid-area: title;
+      font-weight: 600;
+    }
+
+    &-active {
+      grid-area: active;
+      font-size: 14px;
+      color: #16c098;
+    }
+
+    &-search {
+      padding: 0.5em;
+      position: relative;
+      max-height: 22px;
+      grid-area: search;
+      border: none;
+      background-color: #f9fbff;
+      border-radius: 10px;
+      background-image: url("./../img/search.svg");
+      background-repeat: no-repeat;
+      background-size: 13%;
+      background-position: 8px center;
+      transition: all 0.6s;
+
+      @include sm {
+        background-size: 8%;
+        width: 50%;
+        max-height: 15px;
+      }
+
+      &::placeholder {
+        padding-left: 40px;
+        font-size: 12px;
+        color: #b5b7c0;
+
+        @include sm {
+          padding-left: 15px;
+          font-size: 9px;
+        }
+      }
+
+      &:focus {
+        outline: none;
+        background-image: none;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-areas: "name company number email country status";
+
+    @include xs {
+      display: none;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 14px;
+      color: #b5b7c0;
+      padding-bottom: 15px;
+
+      @include lg-md {
+        font-size: 12px;
+      }
+
+      @include md-sm {
+        font-size: 10px;
+      }
+
+      @include sm {
+        font-size: 8px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+
+      @include md-sm {
+        font-size: 10px;
+      }
+
+      @include xs-min {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      @include sm {
+        font-size: 8px;
+      }
+    }
+
+    &-btn {
+      padding-bottom: 16px;
+      padding-top: 16px;
+    }
+    &-items {
+      @include xs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eeeeee;
+      }
+    }
+    &-mobile {
+      @include xs-min {
+        display: none;
+      }
+
+      @include xs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+
+  &__inline {
+    display: inline;
+  }
+
+  &__active {
+    font-weight: 500;
+    font-size: 14px;
+    color: #008767;
+    padding: 0.2em 1.2em;
+    border-radius: 4px;
+    background-color: #a6e7d8;
+    border: 1px solid #008767;
+    transition: all 0.6s;
+
+    @include md-sm {
+      font-size: 10px;
+    }
+
+    @include sm {
+      font-size: 9px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__inactive {
+    font-weight: 500;
+    font-size: 14px;
+    color: #df0404;
+    padding: 0.2em 0.76em;
+    border-radius: 4px;
+    background-color: #ffc5c5;
+    border: 1px solid #df0404;
+    transition: all 0.6s;
+
+    @include md-sm {
+      font-size: 10px;
+    }
+
+    @include sm {
+      font-size: 9px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    @include md {
+      justify-content: center;
+    }
+
+    &-content {
+      font-weight: 500;
+      font-size: 14px;
+      color: #b5b7c0;
+
+      @include md {
+        display: none;
+      }
+    }
+
+    &-actions {
+      display: flex;
+      gap: 12px;
+      @include xs {
+        gap: 8px;
+      }
+    }
+
+    &-btn {
+      font-weight: 500;
+      font-size: 12px;
+      color: #404b52;
+      background-color: #f5f5f5;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      width: 26px;
+      height: 24px;
+      @include xs {
+        font-size: 7px;
+      } 
+
+      &.active {
+        background-color: #5932ea;
+        border: 1px solid #5932ea;
+        color: #ffffff;
+        transition: all 0.6s;
+      }
+    }
+  }
+}
+
+.name,
+.company,
+.number,
+.email,
+.country,
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  grid-area: name;
+}
+
+.company {
+  grid-area: company;
+}
+
+.number {
+  grid-area: number;
+}
+
+.email {
+  grid-area: email;
+}
+
+.country {
+  grid-area: country;
+}
+
+.status {
+  grid-area: status;
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+const customers = [
+  {
+    name: "Jane Cooper",
+    company: "Microsoft",
+    phoneNumber: "(225) 555-0118",
+    email: "jane@microsoft.com",
+    country: "United States",
+    status: "active",
+  },
+  {
+    name: "Floyd Miles",
+    company: "Yahoo",
+    phoneNumber: "(205) 555-0100",
+    email: "floyd@yahoo.com",
+    country: "Kiribati",
+    status: "inActive",
+  },
+  {
+    name: "Ronald Richards",
+    company: "Adobe",
+    phoneNumber: "(302) 555-0107",
+    email: "ronald@adobe.com",
+    country: "Israel",
+    status: "inActive",
+  },
+  {
+    name: "Marvin McKinney",
+    company: "Tesla",
+    phoneNumber: "(252) 555-0126",
+    email: "marvin@tesla.com",
+    country: "Iran",
+    status: "active",
+  },
+  {
+    name: "Jerome Bell",
+    company: "Google",
+    phoneNumber: "(629) 555-0129",
+    email: "jerome@google.com",
+    country: "Réunion",
+    status: "active",
+  },
+  {
+    name: "Kathryn Murphy",
+    company: "Microsoft",
+    phoneNumber: "(406) 555-0120",
+    email: "kathryn@microsoft.com",
+    country: "Curaçao",
+    status: "active",
+  },
+  {
+    name: "Jacob Jones",
+    company: "Yahoo",
+    phoneNumber: "(208) 555-0112",
+    email: "jacob@yahoo.com",
+    country: "Brazil",
+    status: "active",
+  },
+  {
+    name: "Kristin Watson",
+    company: "Facebook",
+    phoneNumber: "(704) 555-0127",
+    email: "kristin@facebook.com",
+    country: "Åland Islands",
+    status: "inActive",
+  },
+];
+
+export default customers;
