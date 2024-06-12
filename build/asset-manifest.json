@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/test-dashboard/static/css/main.5c8fd762.css",
+    "main.js": "/test-dashboard/static/js/main.d79796c2.js",
+    "static/js/787.67ac9987.chunk.js": "/test-dashboard/static/js/787.67ac9987.chunk.js",
+    "static/media/Poppins-Regular.woff2": "/test-dashboard/static/media/Poppins-Regular.ad19729d6a0511212493.woff2",
+    "static/media/Poppins-SemiBold.woff2": "/test-dashboard/static/media/Poppins-SemiBold.3c3f3613b59d581739fc.woff2",
+    "static/media/Poppins-Medium.woff2": "/test-dashboard/static/media/Poppins-Medium.563f976db73ca07d8fc3.woff2",
+    "static/media/promote_normal.svg": "/test-dashboard/static/media/promote_normal.5230029f4e637c534c14.svg",
+    "static/media/promote_active.svg": "/test-dashboard/static/media/promote_active.37c046d526fed8acedb1.svg",
+    "static/media/income_normal.svg": "/test-dashboard/static/media/income_normal.25d824b57e5c5a753432.svg",
+    "static/media/income_active.svg": "/test-dashboard/static/media/income_active.358eb856b70c4a2c5d1c.svg",
+    "static/media/product_normal.svg": "/test-dashboard/static/media/product_normal.1ca4fd5b650bd0a4104c.svg",
+    "static/media/product_active.svg": "/test-dashboard/static/media/product_active.e900c788873e24518453.svg",
+    "static/media/help_normal.svg": "/test-dashboard/static/media/help_normal.5d23912a887f9edc9d9f.svg",
+    "static/media/help_active.svg": "/test-dashboard/static/media/help_active.87f584a4e34fe9d4adbb.svg",
+    "static/media/customers_normal.svg": "/test-dashboard/static/media/customers_normal.2e13c40eea03d9d270cb.svg",
+    "static/media/customers_active.svg": "/test-dashboard/static/media/customers_active.bb15c74b6cb77139ab0b.svg",
+    "static/media/logo.svg": "/test-dashboard/static/media/logo.fe984a6cdb2ef8c5a0b69a7ef20deea3.svg",
+    "static/media/dashboard_normal.svg": "/test-dashboard/static/media/dashboard_normal.153a0eb179be05487297.svg",
+    "static/media/dashboard_active.svg": "/test-dashboard/static/media/dashboard_active.94f304a899a18d918c95.svg",
+    "index.html": "/test-dashboard/index.html",
+    "static/media/search.svg": "/test-dashboard/static/media/search.d555a35800fec6f7c192.svg",
+    "static/media/menu-arrow.svg": "/test-dashboard/static/media/menu-arrow.05c67f5f0585d177024e.svg",
+    "static/media/menu-arrow_active.svg": "/test-dashboard/static/media/menu-arrow_active.3f876a0bd0816e20fb0e.svg",
+    "main.5c8fd762.css.map": "/test-dashboard/static/css/main.5c8fd762.css.map",
+    "main.d79796c2.js.map": "/test-dashboard/static/js/main.d79796c2.js.map",
+    "787.67ac9987.chunk.js.map": "/test-dashboard/static/js/787.67ac9987.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c8fd762.css",
+    "static/js/main.d79796c2.js"
+  ]
+}
